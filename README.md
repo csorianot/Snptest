@@ -1,0 +1,2 @@
+# Snptest
+SNPTEST, QTOOL, IMPUTE2
