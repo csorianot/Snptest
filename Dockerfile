@@ -1,4 +1,5 @@
-FROM ubuntu
+FROM debian
+RUN apt-get clean && apt-get update
 RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
 RUN curl 'https://www.cog-genomics.org/static/bin/plink180410/plink_linux_x86_64.zip'> plink.zip && \
     unzip plink.zip && rm plink.zip && mv plink /usr/local/bin
