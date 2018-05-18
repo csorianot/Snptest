@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
-RUN curl 'https://www.cog-genomics.org/static/bin/plink171114/plink_linux_x86_64.zip'> plink.zip && \
+RUN curl 'https://www.cog-genomics.org/static/bin/plink180410/plink_linux_x86_64.zip'> plink.zip && \
     unzip plink.zip && rm plink.zip && mv plink /usr/local/bin
 RUN curl 'https://bitbucket.org/gavinband/qctool/get/90efb48f6cbd.zip'> qctool.zip && \
     unzip qctool.zip && rm qctool.zip && mv qctool /usr/local/bin
