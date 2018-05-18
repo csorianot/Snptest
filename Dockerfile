@@ -1,4 +1,9 @@
 FROM bash
+RUN apt-get update && apt-get install -y libcurl4-gnutls-dev libxml2-dev libssl-dev libmariadb-client-lgpl-dev \
+    ibglib2.0-dev libcairo2-dev ghostscript && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install libxt-dev && \
+     rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
 RUN curl 'https://www.cog-genomics.org/static/bin/plink171114/plink_linux_x86_64.zip'> plink.zip && \
     unzip plink.zip && rm plink.zip && mv plink /usr/local/bin
