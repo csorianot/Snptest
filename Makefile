@@ -1,7 +1,7 @@
 build:
-	docker build --rm -t r_snptest .
+	docker build --rm -t snptest .
 push:
-	docker tag r_snptest csoriano/r_snptest:2.5.2
-	docker push csoriano/csoriano/r_snptest:2.5.2
+	docker tag snptest csoriano/snptest:2.5.2
+	docker push csoriano/csoriano/snptest:2.5.2
 login:
 	docker login
