@@ -10,4 +10,4 @@ RUN curl 'https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.v2.r9
 RUN curl 'http://www.well.ox.ac.uk/~cfreeman/software/gwas/gtool_v0.7.5_x86_64.tgz'> gtool.tgz && \ 
  tar zxvf gtool.tgz && rm gtool.tgz && mv gtool /usr/local/bin
 RUN curl 'http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz'> snptest_v2.5.2_linux_x86_64_dynamic.tgz && \ 
- tar zxvf snptest_v2.5.2_linux_x86_64_dynamic.tgz && rm snptest_v2.5.2_linux_x86_64_dynamic.tgz && mv -T snptest_v2.5.2_linux_x86_64_dynamic/example/ snptest_v2.5.2_linux_x86_64_dynamic/example2/ &&  rm snptest_v2.5.2_linux_x86_64_dynamic/example/ && mv snptest_v2.5.2_linux_x86_64_dynamic/* /usr/local/bin/ &&  rename snptest_v2.5.2 snptest 
+ tar zxvf snptest_v2.5.2_linux_x86_64_dynamic.tgz && rm snptest_v2.5.2_linux_x86_64_dynamic.tgz && mv -T snptest_v2.5.2_linux_x86_64_dynamic/example/ snptest_v2.5.2_linux_x86_64_dynamic/example2/ && mv snptest_v2.5.2_linux_x86_64_dynamic/* /usr/local/bin/ &&  rename snptest_v2.5.2 snptest 
