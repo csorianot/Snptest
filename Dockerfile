@@ -12,4 +12,4 @@ RUN curl 'http://www.well.ox.ac.uk/~cfreeman/software/gwas/gtool_v0.7.5_x86_64.t
 RUN curl 'http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz'> snptest_v2.5.2_linux_x86_64_dynamic.tgz && \ 
  tar zxvf snptest_v2.5.2_linux_x86_64_dynamic.tgz && rm snptest_v2.5.2_linux_x86_64_dynamic.tgz && mv -T snptest_v2.5.2_linux_x86_64_dynamic/example/ snptest_v2.5.2_linux_x86_64_dynamic/example2/ && mv snptest_v2.5.2_linux_x86_64_dynamic/snptest_v2.5.2 snptest_v2.5.2_linux_x86_64_dynamic/snptest && mv snptest_v2.5.2_linux_x86_64_dynamic/* /usr/local/bin/ && rm -r example && chmod 777 /usr/local/bin/*
 RUN curl 'https://bitbucket.org/gavinband/qctool/get/1215abdf6740.zip' && unzip gavinband-qctool-1215abdf6740.zip && mv gavinband-qctool-1215abdf6740/doc gavinband-qctool-1215abdf6740/doc2 && mv gavinband-qctool-1215abdf6740/* /usr/local/bin
-RUN /usr/local/bin/waf-1.5.18 configure && /usr/local/bin/waf-1.5.18
+
