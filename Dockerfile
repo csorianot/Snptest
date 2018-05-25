@@ -11,4 +11,7 @@ RUN curl 'http://www.well.ox.ac.uk/~cfreeman/software/gwas/gtool_v0.7.5_x86_64.t
  tar zxvf gtool.tgz && rm gtool.tgz && mv gtool /usr/local/bin
 RUN curl 'http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.2_linux_x86_64_dynamic.tgz'> snptest_v2.5.2_linux_x86_64_dynamic.tgz && \ 
  tar zxvf snptest_v2.5.2_linux_x86_64_dynamic.tgz && rm snptest_v2.5.2_linux_x86_64_dynamic.tgz && mv -T snptest_v2.5.2_linux_x86_64_dynamic/example/ snptest_v2.5.2_linux_x86_64_dynamic/example2/ && mv snptest_v2.5.2_linux_x86_64_dynamic/snptest_v2.5.2 snptest_v2.5.2_linux_x86_64_dynamic/snptest && mv snptest_v2.5.2_linux_x86_64_dynamic/* /usr/local/bin/ && rm -r example && chmod 777 /usr/local/bin/*
-RUN curl -LO 'http://www.well.ox.ac.uk/~gav/resources/qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz' && tar zxvf qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz  && mv qctool_v2.0-rc9-Ubuntu16.04-x86_64/* /usr/local/bin/
+RUN curl -LO 'http://www.well.ox.ac.uk/~gav/resources/qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz' && tar zxvf qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz  && mv qctool_v2.0-rc9-Ubuntu16.04-x86_64/* /usr/local/bin/ && chmod 777 /usr/local/bin/*
+RUN curl -LO 'http://www.well.ox.ac.uk/~gav/resources/qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz' && tar zxvf qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz  && mv qctool_v2.0-rc9-Ubuntu16.04-x86_64/* /usr/local/bin/ && chmod 777 /usr/local/bin/*
+RUN curl -LO 'http://www.well.ox.ac.uk/~gav/resources/qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz' && tar zxvf qctool_v2.0-rc9-Ubuntu16.04-x86_64.tgz  && mv qctool_v2.0-rc9-Ubuntu16.04-x86_64/* /usr/local/bin/ && chmod 777 /usr/local/bin/*
+
