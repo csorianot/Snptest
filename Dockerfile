@@ -1,7 +1,7 @@
 FROM debian:latest
 RUN apt-get clean && apt-get update
 RUN apt-get update && apt-get install -y curl unzip vim liblapack3 git && rm -rf /var/lib/apt/lists/*
-RUN curl -LO 'http://www.cog-genomics.org/static/bin/plink180528/plink_linux_x86_64.zip' && unzip plink_linux_x86_64.zip && rm plink_linux_x86_64.zip && mv plink /usr/local/bin/
+RUN curl -LO 'http://s3.amazonaws.com/plink1-assets/plink_linux_x86_64_20181202.zip' && unzip plink_linux_x86_64_20181202.zip && link_linux_x86_64_20181202.zip && mv plink /usr/local/bin/
 RUN curl 'https://mathgen.stats.ox.ac.uk/impute/impute_v2.3.2_x86_64_dynamic.tgz'> impute_v2.3.2_x86_64_dynamic.tgz && \ 
   tar zxvf impute_v2.3.2_x86_64_dynamic.tgz && rm impute_v2.3.2_x86_64_dynamic.tgz && mv impute_v2.3.2_x86_64_dynamic/* /usr/local/bin/
 RUN curl 'https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.v2.r904.glibcv2.17.linux.tar.gz'> shapeit.v2.r904.glibcv2.17.linux.tar.gz && \
